@@ -1,0 +1,13 @@
+package com.darshana.demo.heroapp
+
+import org.springframework.boot.SpringApplication
+import org.springframework.boot.autoconfigure.SpringBootApplication
+
+@SpringBootApplication
+class HeroAppApplication {
+
+	static void main(String[] args) {
+		SpringApplication.run(HeroAppApplication, args)
+	}
+
+}
