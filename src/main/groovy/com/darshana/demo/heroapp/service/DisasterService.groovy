@@ -39,7 +39,6 @@ class DisasterService {
 
     Disaster update(Disaster disaster, long id) {
         def persisted = findByIdOrError(id)
-        // update entity's values
         persisted.with {
             title = disaster.title
             location = disaster.location

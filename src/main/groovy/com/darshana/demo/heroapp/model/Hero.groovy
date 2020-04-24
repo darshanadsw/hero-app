@@ -14,7 +14,6 @@ import javax.persistence.ManyToMany
 import javax.persistence.OneToMany
 
 @Builder
-@ToString
 @EqualsAndHashCode
 @Entity
 class Hero {

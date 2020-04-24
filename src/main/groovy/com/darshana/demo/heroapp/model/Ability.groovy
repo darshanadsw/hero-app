@@ -13,7 +13,6 @@ import javax.persistence.ManyToOne
 
 @Entity
 @Builder
-@ToString
 class Ability {
 
     @Id

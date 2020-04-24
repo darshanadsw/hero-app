@@ -23,9 +23,9 @@ class HeroService {
         heroRepository.findById(id).orElse(null)
     }
 
-    def findHeroByIdOrError(id){
+    def findHeroByIdOrError(def id){
         heroRepository.findById(id)
-                .orElseThrow(new EntityNotFoundException("No hero entity found with id $id"))
+                .orElseThrow({->new EntityNotFoundException("No hero found with id $id")})
     }
 
     def saveHero(Hero hero){

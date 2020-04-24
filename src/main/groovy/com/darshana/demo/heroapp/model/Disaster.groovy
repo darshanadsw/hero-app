@@ -12,7 +12,6 @@ import javax.persistence.JoinColumn
 import javax.persistence.JoinTable
 import javax.persistence.ManyToMany
 
-@ToString
 @Entity
 @Builder
 class Disaster {
